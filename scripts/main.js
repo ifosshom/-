@@ -1,11 +1,14 @@
 "use strict"
 
-var myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
+var myImage = document.querySelector('img');
 
-let valid = true;
-let answer = prompt("Любишь yungrussia?", "");
-if ('answer == да' ) {
-  alert("Ты не ответил да!");
-  valid = false;
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/yr2.jpg') {
+      myImage.setAttribute ('src','images/yr.jpg');
+    } else {
+      myImage.setAttribute ('src','images/yr.jpg');
+    }
 }
+
+
